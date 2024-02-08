@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/df6db67c01.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="nav">
+      <h3>Welcome</h3>
+    </nav>
+    <!-- preloader -->
+    <div class="preloader">
+      <img src="images/logo.svg" alt="logo" class="preloader-item" />
+      <h3>Test Your Knowledge</h3>
+    </div>
+
+    <!-- second page -->
+    <section>
+      <div class="second-page">
+        <img src="images/logo.svg" alt="logo" />
+        <div>
+          <h4>Test Your Knowledge</h4>
+          <span class="date"></span>
+        </div>
+        <div>
+          <h4>Choose a Category</h4>
+          <div class="insert-category"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- third page -->
+    <main class="main">
+      <nav>
+        <img src="images/logo.svg" alt="logo" class="home">
+        <h4>Score: <span class="score"></span></h4>
+        <h4>Time: <span class="time"></span></h4>
+      </nav>
+      <div class="question-answer"></div>
+    </main>
+
+    <!-- final page -->
+    <div class="final-page">
+      <h1>Quiz Complete</h1>
+      <h2>Your Score (solved at first attempt): <span class="show-result"></span></h2>
+      <button class="restart">Return</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
