@@ -421,4 +421,5 @@ p {
 .restart:hover {
   background: var(--clr-grey-1);
   scale: 1.1;
+  cursor: pointer;
 }
