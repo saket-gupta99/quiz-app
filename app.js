@@ -123,7 +123,6 @@ function displayNextQuestion(display, atQuestion, chooseAnswer) {
     }
     if (atQuestion >= chosenCategory.length) {
         questionAnswer.remove();
-        score.remove();
         clearInterval(timeId);
         playSound('success_bell.mp3');
         finalPage.classList.add('add-final-page');
